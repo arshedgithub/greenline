@@ -7,16 +7,19 @@ import NotFound from "./pages/notFound";
 import SigninBar from "./components/signinBar";
 import NavBar from "./components/navBar";
 import "./App.css";
+import Footer from "./components/footer";
 
 function App() {
   const [scroll, setScroll] = useState(false);
-  window.addEventListener("scroll", () => {
-    setScroll(true);
-    setTimeout(() => setScroll(false), 3000);
-  });
+
+  // window.addEventListener("scroll", () => {
+  //   setScroll(true);
+  //   setTimeout(() => setScroll(false), 3000);
+  // });
   return (
     <React.Fragment>
-      {scroll ? <SigninBar /> : ""}
+      {/* {scroll ? <SigninBar /> : ""} */}
+      <SigninBar />
       <NavBar />
       <div className="main">
         <Routes>
@@ -28,6 +31,7 @@ function App() {
           <Route path="*" element={<Navigate replace to="/not-found" />} />
         </Routes>
       </div>
+      <Footer />
     </React.Fragment>
   );
 }
