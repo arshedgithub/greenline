@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faLaptop } from "@fortawesome/free-solid-svg-icons";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 import NavbarList from "./navbarList";
 
 const NavBar = () => {
@@ -10,11 +10,10 @@ const NavBar = () => {
   window.addEventListener("resize", () => setMobileMenu(false));
 
   return (
-    <nav className="navbar navbar-expand-lg">
+    <nav className="navbar navbar-expand-lg border-bottom shadow-bottom">
       <div className="container-fluid ">
         <Link className="navbar-brand mb-2" to="/home">
-          <FontAwesomeIcon icon={faLaptop} size="2x" />
-          &nbsp;logo
+          logo
         </Link>
         <button
           className="navbar-toggler"
@@ -26,7 +25,7 @@ const NavBar = () => {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span className="fs-3 text-light">
+          <span className="fs-3">
             <FontAwesomeIcon icon={faBars} />
           </span>
         </button>
