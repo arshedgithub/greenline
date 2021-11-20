@@ -6,8 +6,8 @@ import Contact from "./pages/contact";
 import NotFound from "./pages/notFound";
 import SigninBar from "./components/signinBar";
 import NavBar from "./components/navBar";
-import "./App.css";
 import Footer from "./components/footer";
+import "./App.css";
 
 function App() {
   const [scroll, setScroll] = useState(false);
