@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/components/navbarList.css","webpack://src/App.css"],"names":[],"mappings":"AAAA,iCAEE,uBACF,CCHA,MACE,eACF","file":"main.e7d5130c.chunk.css","sourcesContent":[".nav-link:hover,\n.nav-link:active {\n  color: rgb(51, 194, 8) !important;\n}\n",".main {\n  min-height: 70vh;\n}\n"]}
