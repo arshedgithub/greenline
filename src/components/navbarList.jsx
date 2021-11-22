@@ -1,11 +1,12 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
+import MobileMenu from "./mobileMenu";
 import "./navbarList.css";
 
 const ListItem = () => {
   return (
     <li className="nav-item p-2">
-      <NavLink className="nav-link text-dark" aria-current="page" to="/home">
+      <NavLink className="nav-link text-dark" to="/home">
         HOME
       </NavLink>
     </li>
@@ -13,14 +14,15 @@ const ListItem = () => {
 };
 
 const NavbarList = ({ mobileMenu }) => {
+  console.log("list");
   return (
-    <ul className={mobileMenu ? "navbar-nav w-100 text-center" : "navbar-nav"}>
+    <ul className={mobileMenu ? "w-50 bg-primary" : "navbar-nav"}>
+      mobileMenu? <MobileMenu /> : ''
       <li className="nav-item p-2">
         <NavLink className="nav-link text-dark" aria-current="page" to="/home">
           HOME
         </NavLink>
       </li>
-
       <li className="nav-item p-2">
         <NavLink className="nav-link text-dark" aria-current="page" to="#">
           HOSTING
