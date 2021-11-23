@@ -10,7 +10,7 @@ import Footer from "./components/footer";
 import "./App.css";
 
 function App() {
-  const [scroll, setScroll] = useState(false);
+  // const [scroll, setScroll] = useState(false);
 
   // window.addEventListener("scroll", () => {
   //   setScroll(true);

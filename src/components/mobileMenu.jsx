@@ -7,7 +7,7 @@ const MobileMenu = () => {
       className="menu h-100"
       style={{ width: "100", zIndex: 1, position: "relative" }}
     >
-      <NavbarList />
+      {/* <NavbarList /> */}
     </div>
   );
 };
