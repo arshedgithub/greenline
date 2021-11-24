@@ -1,5 +1,6 @@
 import React from "react";
 import FindDomain from "../components/findDomain";
+import ServicePackages from "../components/servicePackages";
 
 const Home = () => {
   return (
@@ -13,11 +14,7 @@ const Home = () => {
           100% customer satisfaction when using our services.
         </p>
       </div>
-      <div className="packages">
-        <div>
-          <table className="table"></table>
-        </div>
-      </div>
+      <ServicePackages />
       <div className="m-auto text-center">
         <p className="fs-3 fw-bolder">
           How to build your Website Online Today?

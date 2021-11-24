@@ -26,7 +26,7 @@ const SigninBar = () => {
         </div>
         <div>
           <Link to="https://manage.greenline.lk/login" target="_blank">
-            <button className="signBtn btn border border-white text-light mx-2">
+            <button className="signBtn btn border border-white text-light">
               <FontAwesomeIcon icon={faUser} /> &nbsp;
               <span className={fontSize}>login</span>
             </button>
