@@ -12,7 +12,7 @@ const NavBar = () => {
   return (
     <nav
       className="navbar navbar-expand-lg border-bottom shadow-sm bg-white"
-      style={{ position: "sticky", top: 0, opacity: 0.98 }}
+      style={{ position: "sticky", top: 0, opacity: 0.98, zIndex: 3 }}
     >
       <div className="container-fluid ">
         <Link className="navbar-brand mb-2" to="/home">

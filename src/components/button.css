@@ -1,0 +1,9 @@
+button {
+  color: rgb(11, 197, 27) !important;
+  border: 2px solid rgb(7, 206, 23) !important;
+}
+
+button:hover {
+  color: white !important;
+  background-color: rgb(7, 206, 23) !important;
+}

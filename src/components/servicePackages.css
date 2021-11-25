@@ -1,0 +1,22 @@
+.package:hover {
+  box-shadow: 5px 5px 20px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.4s ease-in-out;
+  transform: scale(1.1, 1.05);
+}
+
+.bg-green {
+  background-color: rgb(28, 156, 39);
+}
+
+.bg-green > .container > button {
+  color: rgb(28, 156, 39) !important;
+}
+
+.bg-green > .container > button:hover {
+  color: white !important;
+  background-color: rgb(3, 146, 46) !important;
+}
+button:hover {
+  color: white !important;
+  background-color: rgb(3, 146, 46) !important;
+}
