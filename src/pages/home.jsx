@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "../components/button";
+import FAQSection from "../components/faqSection";
 import FindDomain from "../components/findDomain";
 import ServicePackages from "../components/servicePackages";
 
@@ -90,13 +91,7 @@ const Home = () => {
           height="200"
         />
       </div>
-      <div className="my-5 text-center">
-        <p className="fs-3 fw-bolder">Frequently Asked Question (FAQ)</p>
-        <div className="row row-cols-2">
-          <div className="col">col1</div>
-          <div className="col">col2</div>
-        </div>
-      </div>
+      <FAQSection />
     </React.Fragment>
   );
 };
