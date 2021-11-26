@@ -1,8 +1,10 @@
 import React from "react";
 import Button from "../components/button";
+import Carousel from "../components/carousel";
 import FindDomain from "../components/findDomain";
 import Question from "../components/question";
 import ServicePackages from "../components/servicePackages";
+import Tabs from "../components/tabs";
 
 const greenText = { color: "rgb(11, 197, 27)" };
 const questions = [
@@ -28,7 +30,7 @@ const questions = [
 const Home = () => {
   return (
     <React.Fragment>
-      carousel
+      <Carousel />
       <FindDomain />
       <div className="m-4 text-center">
         <p className="fs-3 fw-bolder">Get Started with Just 650.00LKR</p>
@@ -121,10 +123,7 @@ const Home = () => {
           ))}
         </div>
       </div>
-      <div className="my-5 text-center">
-        <p className="fs-4 fw-bold">What more we offer</p>
-        tabs
-      </div>
+      <Tabs />
       <div className="my-5 text-center bg-light py-4">
         <p className="text-muted p-0">Hosted over 1000 websites</p>
         <p className="fs-4 fw-bold">Get your website online today</p>

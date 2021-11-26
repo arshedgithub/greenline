@@ -17,7 +17,7 @@ const NavbarList = ({ mobileMenu }) => {
   console.log("list");
   return (
     <ul className={mobileMenu ? "w-50 bg-primary" : "navbar-nav"}>
-      mobileMenu? <MobileMenu /> : ''
+      {/* mobileMenu? <MobileMenu /> : '' */}
       <li className="nav-item p-2">
         <NavLink className="nav-link text-dark" aria-current="page" to="/home">
           HOME
