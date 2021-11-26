@@ -5,7 +5,7 @@ import "./button.css";
 const Button = ({ value, link = "#" }) => {
   return (
     <Link to={link}>
-      <button className="btn btn-light fw-bold px-4">{value}</button>
+      <button className="greenBtn btn btn-light fw-bold px-4">{value}</button>
     </Link>
   );
 };
