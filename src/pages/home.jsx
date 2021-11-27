@@ -127,6 +127,24 @@ const Home = () => {
       <div className="my-5 text-center bg-light py-4">
         <p className="text-muted p-0">Hosted over 1000 websites</p>
         <p className="fs-4 fw-bold">Get your website online today</p>
+        <div className="row m-4">
+          <div className="col p-4 m-2 bg-white">
+            <p className="fw-light">Projects</p>
+            <p className="fs-3 fw-bold py-0">5211</p>
+          </div>
+          <div className="col p-4 m-2 bg-white">
+            <p className="fw-light">Clients</p>
+            <p className="fs-3 fw-bold py-0">625</p>
+          </div>
+          <div className="col p-4 m-2 bg-white">
+            <p className="fw-light">Sales</p>
+            <p className="fs-3 fw-bold py-0">2613</p>
+          </div>
+          <div className="col p-4 m-2 bg-white">
+            <p className="fw-light">Domains</p>
+            <p className="fs-3 fw-bold py-0">342</p>
+          </div>
+        </div>
       </div>
       <div className="my-5 text-center">
         <p className="fs-4 fw-bold">The Cutting Edge Technologies</p>

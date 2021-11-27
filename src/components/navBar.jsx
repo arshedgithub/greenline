@@ -37,7 +37,6 @@ const NavBar = () => {
           <NavbarList mobileMenu={mobileMenu} />
         </div>
       </div>
-      {/* {mobileMenu ? <NavbarList mobileMenu={mobileMenu} /> : ""} */}
     </nav>
   );
 };

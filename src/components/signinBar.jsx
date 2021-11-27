@@ -12,7 +12,7 @@ const fontSize = { fontSize: "2.5vh" };
 
 const SigninBar = () => {
   return (
-    <nav className="navbar bg-dark">
+    <nav className="navbar bg-dark" style={{ zIndex: 4 }}>
       <div className="container-fluid">
         <div className="contact">
           <div className="text-light me-3">

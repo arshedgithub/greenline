@@ -85,7 +85,6 @@ const Tabs = () => {
           <Btn key={txt} txt={txt} onclick={onclick} />
         ))}
       </div>
-      {console.log(index)}
       <Content content={contents[index]} />
     </div>
   );

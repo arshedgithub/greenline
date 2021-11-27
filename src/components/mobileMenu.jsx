@@ -4,10 +4,10 @@ import NavbarList from "./navbarList";
 const MobileMenu = () => {
   return (
     <div
-      className="menu h-100"
-      style={{ width: "100", zIndex: 1, position: "relative" }}
+      className="menu bg-light p-5 h-100"
+      style={{ zIndex: 3, position: "fixed", top: 0, right: 0 }}
     >
-      {/* <NavbarList /> */}
+      <NavbarList />
     </div>
   );
 };
