@@ -107,7 +107,7 @@ const Home = () => {
       </div>
       <div className="bg-light p-2 text-center">
         <iframe
-          src="https://youtube.com/embed/WRdQo5pNqB0?autoplay=1&mute=1&loop=1"
+          src="https://youtube.com/embed/WRdQo5pNqB0?autoplay=1&mute=1"
           frameBorder="0"
           width="300"
           height="200"

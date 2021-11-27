@@ -1,0 +1,27 @@
+.tabBtn {
+  border: none !important;
+  font-size: 1.5vh !important;
+}
+
+.tab {
+  margin: 0.5vh;
+  padding: 0;
+}
+
+@media screen and (min-width: 400px) {
+  .tabBtn {
+    font-size: 2.5vh !important;
+    padding: 2vh;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .tab-container {
+    margin: 0 7vh !important;
+  }
+
+  .tabBtn {
+    font-size: 2vh !important;
+    padding: 2vh 5vh;
+  }
+}
