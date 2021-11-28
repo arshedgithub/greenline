@@ -72,7 +72,7 @@ const Tabs = () => {
   const onclick = (e) => {
     setSelected(e.target.id);
     for (let i = 0; i < btns.length; i++) {
-      if (btns[i] == selected) setIndex(i);
+      if (btns[i] === selected) setIndex(i);
     }
   };
 

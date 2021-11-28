@@ -11,20 +11,15 @@ import NavBar from "./components/navBar";
 import Footer from "./components/footer";
 import "./App.css";
 
-let mobileMenu = true;
-
-const setMobileMenu = () => {
-  return !mobileMenu;
-};
-
-setMobileMenu();
-console.log(mobileMenu);
 function App() {
+  const [mobileMenu, setMobileMenu] = useState(false);
+  window.addEventListener("resize", () => setMobileMenu(false));
+
   return (
     <React.Fragment>
       <SigninBar />
-      <NavBar />
-      {mobileMenu ? <MobileMenu /> : ""}
+      <NavBar menuClick={() => setMobileMenu(true)} />
+      {mobileMenu ? <MobileMenu close={() => setMobileMenu(false)} /> : ""}
       <div className="main">
         <Routes>
           <Route path="/home" element={<Home />} />

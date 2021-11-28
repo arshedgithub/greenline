@@ -1,14 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
-import NavbarList from "./navbarList";
 
-const NavBar = () => {
-  const [mobileMenu, setMobileMenu] = useState(false);
-
-  window.addEventListener("resize", () => setMobileMenu(false));
-
+const NavBar = ({ menuClick }) => {
   return (
     <nav
       className="navbar navbar-expand-lg border-bottom shadow-sm bg-white"
@@ -21,7 +16,7 @@ const NavBar = () => {
         <button
           className="navbar-toggler bg-dark"
           type="button"
-          onClick={() => setMobileMenu(!mobileMenu)}
+          onClick={menuClick}
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
           aria-controls="navbarNav"
@@ -34,7 +29,7 @@ const NavBar = () => {
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
           <div className="me-auto"></div>
-          <NavbarList mobileMenu={mobileMenu} />
+          {/* <NavbarList mobileMenu={mobileMenu} /> */}
         </div>
       </div>
     </nav>
