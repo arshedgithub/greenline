@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+import NavbarList from "./navbarList";
 
 const NavBar = ({ menuClick }) => {
   return (
@@ -29,7 +30,7 @@ const NavBar = ({ menuClick }) => {
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
           <div className="me-auto"></div>
-          {/* <NavbarList mobileMenu={mobileMenu} /> */}
+          <NavbarList />
         </div>
       </div>
     </nav>
